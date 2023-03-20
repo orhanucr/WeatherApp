@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_screen"
-    tools:context=".MainActivity">
+    tools:context=".view.MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -18,9 +18,9 @@
             android:id="@+id/tv_error"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="#4DFFFFFF"
-            android:padding="15dp"
             android:text="@string/error_message"
+            android:padding="15dp"
+            android:background="#4DFFFFFF"
             android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -39,19 +39,16 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#4DFFFFFF"
-                android:orientation="horizontal"
-                android:padding="5dp">
+                android:padding="5dp"
+                android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
@@ -64,10 +61,10 @@
                         android:id="@+id/edt_city_name"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:hint="City Name"
                         android:inputType="text"
-                        android:lines="1"
-                        android:maxLines="1" />
+                        android:maxLines="1"
+                        android:hint="City Name"
+                        android:lines="1" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -149,25 +146,25 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-
+                        <!--Nem-->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Humidity" />
 
-
+                        <!--Rüzgar Hızı-->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Wind Speed" />
 
-
+                        <!--Enlem-->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:text="Latitude" />
 
-
+                        <!--Boylam-->
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -216,3 +213,4 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
