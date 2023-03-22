@@ -95,7 +95,8 @@ class MainActivity : AppCompatActivity() {
                     .load("https://openweathermap.org/img/wn/" + data.weather.get(0).icon + "@2x.png")
                     .into(img_weather_pictures)
 
-                tv_degree.text = data.main.temp.toString() + "°C"
+                var degree = data.main.temp/10
+                tv_degree.text = degree.toString() + "°C"
 
                 tv_humidity.text = data.main.humidity.toString() + "%"
                 tv_wind_speed.text = data.wind.speed.toString()
