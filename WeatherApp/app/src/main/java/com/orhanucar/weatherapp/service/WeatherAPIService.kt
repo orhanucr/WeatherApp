@@ -8,9 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class WeatherAPIService {
 
-
-
-    private val BASE_URL = "https:your API"
+    private val BASE_URL = "https://your API/"
     private val api = Retrofit.Builder()
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
